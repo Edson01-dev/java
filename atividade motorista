@@ -1,0 +1,53 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package javaapplication4;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Aluno
+ */
+public class JavaApplication4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+         
+   String Nome;
+   String placa;
+   int velocidade;
+   Nome =(
+  JOptionPane.showInputDialog (
+  "digite o nome do motorista: "
+  )
+   );
+    placa =(
+  JOptionPane.showInputDialog (
+  "digite a placa do motorista: "
+  )
+   );
+      velocidade = Integer.parseInt(
+ JOptionPane.showInputDialog(
+ "Digite a velocidade que ele passou: ")
+   );
+ 
+   
+
+   if (velocidade >= 60) {
+       JOptionPane.showMessageDialog (null, "Motorista: "
+       + Nome + "\nplaca do carro: " + placa
+       + "\nfoi multado. ");
+   }  else {
+               JOptionPane.showMessageDialog (null, "Motorista: "
+       + Nome + "\n placa do carro: " + placa
+       + "\n não foi multado. ");
+               }
+   }
+   
+    }
+    
+
