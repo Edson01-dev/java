@@ -1,0 +1,45 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package javaapplication7;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Aluno
+ */
+public class JavaApplication7 {
+
+   
+    public static void main(String[] args) {
+       String nome = null;
+       int pontuacao = 0;
+      double pontuaçãoFinal = 0;
+        
+       for (int i = 1; i <= 3; i++){
+           
+     pontuacao = Integer.parseInt(
+     JOptionPane.showInputDialog(
+     "pessoa "+ i
+     + "\nQual é a pontuação: "));        
+   
+      pontuaçãoFinal = pontuaçãoFinal + pontuacao;      
+       }
+    
+   
+          String  mensagem = 
+        "===resultados==="
+             + "Jogador " + nome + "teve a pontuação "+ pontuaçãoFinal;
+          if (pontuaçãoFinal < 100) {
+ JOptionPane.showMessageDialog (null, mensagem
+       + "\nJOGADOR REPROVADO");
+    }
+          else {
+              JOptionPane.showMessageDialog (null, mensagem
+       + "\nJOGADOR APROVADO");
+          }
+    } 
+}
+
+    
+
